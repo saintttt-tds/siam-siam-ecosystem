@@ -1,0 +1,24 @@
+# pnpm-workspace.yaml
+# SiamSiam Ecosystem Workspace Configuration
+# Defines all packages and services in the monorepo
+
+packages:
+  # Shared internal packages
+  - "packages/*"
+  
+  # Core microservices
+  - "services/*"
+  
+  # Business applications
+  - "applications/*"
+  
+  # Customer-facing web application
+  - "frontend"
+  
+  # Mobile applications
+  - "mobile/shared"
+  - "mobile/android"
+  - "mobile/ios"
+  
+  # Developer SDKs
+  - "sdk/*"

@@ -1,0 +1,125 @@
+# .gitignore
+# SiamSiam Ecosystem - Git Ignore File
+# ===================================================
+
+# Dependencies
+node_modules/
+.pnpm-store/
+*.tgz
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+*.tsbuildinfo
+
+# Environment files (CRITICAL: Never commit real credentials)
+.env
+.env.*
+!.env.example
+config/.env.*
+!config/.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+.cache/
+
+# Docker
+.docker/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Security
+# Never commit secrets, keys, or certificates
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+.secrets/
+credentials.json
+service-account.json
+
+# Terraform
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+!terraform.tfvars.example
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+
+# OS generated files
+Desktop.ini
+$RECYCLE.BIN/
+
+# Uploaded files (development)
+uploads/
+storage/
+
+# Mobile
+*.apk
+*.aab
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+
+# AI/ML
+*.pkl
+*.h5
+*.pb
+*.onnx
+model-artifacts/
+checkpoints/

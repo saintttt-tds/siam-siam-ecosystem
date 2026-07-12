@@ -1,0 +1,38 @@
+{
+  "name": "@siamsiam/shared-utils",
+  "version": "1.0.0",
+  "description": "Shared utilities for SiamSiam ecosystem - auth, database, logging, messaging, security, caching, and more",
+  "main": "src/index.js",
+  "files": [
+    "src/**/*.js",
+    "!src/**/*.test.js",
+    "!src/**/*.spec.js"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "@siamsiam/shared-config": "workspace:*",
+    "pg": "^8.11.3",
+    "knex": "^3.1.0",
+    "redis": "^4.6.12",
+    "amqplib": "^0.10.3",
+    "winston": "^3.11.0",
+    "joi": "^17.11.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^9.0.0",
+    "crypto-js": "^4.2.0",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "axios": "^1.6.5",
+    "ioredis": "^5.3.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@siamsiam/shared-config": "workspace:*",
+    "jest": "^29.7.0"
+  }
+}

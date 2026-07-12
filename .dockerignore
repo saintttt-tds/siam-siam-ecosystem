@@ -1,0 +1,61 @@
+# .dockerignore
+# SiamSiam Ecosystem - Docker Ignore File
+# ===================================================
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs (these get built inside Docker)
+dist/
+build/
+.next/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+coverage/
+tests/
+*.test.js
+*.spec.js
+
+# Documentation
+docs/
+README.md
+CHANGELOG.md
+LICENSE
+
+# CI/CD
+.github/
+.circleci/
+.travis.yml
+
+# Docker
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+
+# Temporary files
+tmp/
+temp/
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kubernetes manifests (not needed in images)
+infrastructure/kubernetes/

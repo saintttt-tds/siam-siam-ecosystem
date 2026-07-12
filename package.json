@@ -1,0 +1,70 @@
+{
+  "name": "siamsiam-ecosystem",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SiamSiam Ecosystem - Pan-African Super App Platform providing commerce, payments, delivery, and financial services",
+  "keywords": [
+    "fintech",
+    "ecommerce",
+    "payments",
+    "delivery",
+    "africa",
+    "super-app",
+    "microservices",
+    "ussd",
+    "mobile-money",
+    "forex"
+  ],
+  "homepage": "https://siamsiam.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siamsiam/siamsiam-ecosystem.git"
+  },
+  "author": "SiamSiam Engineering Team <engineering@siamsiam.com>",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "test:coverage": "turbo run test:coverage",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,json,md,yml,yaml}\"",
+    "format:check": "prettier --check \"**/*.{js,json,md,yml,yaml}\"",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "db:migrate": "turbo run db:migrate",
+    "db:migrate:rollback": "turbo run db:migrate:rollback",
+    "db:seed": "turbo run db:seed",
+    "db:reset": "pnpm run db:migrate:rollback && pnpm run db:migrate && pnpm run db:seed",
+    "docker:dev": "docker-compose -f config/docker/docker-compose.dev.yml up -d",
+    "docker:dev:build": "docker-compose -f config/docker/docker-compose.dev.yml up -d --build",
+    "docker:prod": "docker-compose -f config/docker/docker-compose.prod.yml up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "setup:dev": "pnpm install && pnpm run db:migrate && pnpm run db:seed",
+    "setup:prod": "pnpm install --frozen-lockfile && pnpm run build",
+    "security:audit": "pnpm audit",
+    "security:scan": "snyk test --all-projects",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "turbo": "^1.11.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.2.0",
+    "eslint": "^8.56.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
+  }
+}

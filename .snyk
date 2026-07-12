@@ -1,0 +1,25 @@
+# .snyk
+# Snyk Security Policy
+
+version: v1.25.0
+
+ignore: {}
+
+patch: {}
+
+# Exclude test and documentation files
+exclude:
+  global:
+    - "**/*.test.js"
+    - "**/*.spec.js"
+    - "**/tests/**"
+    - "**/docs/**"
+    - "**/node_modules/**"
+    - "**/dist/**"
+    - "**/build/**"
+    - ".github/**"
+
+# Set language settings
+language-settings:
+  python: "3.11"
+  javascript: "es2022"
