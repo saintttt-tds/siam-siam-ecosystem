@@ -1,4 +1,4 @@
-# SiamSiam Ecosystem 🚀
+# SiamSiam Ecosystem 
 
 <div align="center">
 
@@ -13,24 +13,24 @@
 
 </div>
 
-## 📖 Overview
+##  Overview
 
 SiamSiam is a comprehensive pan-African super app ecosystem providing:
 
-- 🛒 **Axion Commerce** - B2B2C Marketplace
-- 💰 **AxionPay** - Digital Wallet & Payments
-- 🚁 **AxionFly** - Delivery & Logistics (including drone delivery!)
-- 🏪 **AxionPOS** - Point of Sale System
-- 📱 **USSD Gateway** - *123# style mobile banking
-- 💱 **Corporate FX** - Foreign Exchange Trading
-- 🔌 **Developer Portal** - API Platform
-- 🤖 **AI/ML Service** - Intelligent features
+-  **Axion Commerce** - B2B2C Marketplace
+-  **AxionPay** - Digital Wallet & Payments
+-  **AxionFly** - Delivery & Logistics (including drone delivery!)
+-  **AxionPOS** - Point of Sale System
+-  **USSD Gateway** - *007# style mobile banking
+-  **Corporate FX** - Foreign Exchange Trading
+-  **Developer Portal** - API Platform
+-  **AI/ML Service** - Intelligent features
 
-## 🏗️ Architecture
+## Architecture
 
 
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -45,7 +45,7 @@ SiamSiam is a comprehensive pan-African super app ecosystem providing:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/siamsiam/siamsiam-ecosystem.git
+git clone https://github.com/saintttt-tds/siamsiam-ecosystem.git
 cd siamsiam-ecosystem
 
 # 2. Install dependencies
@@ -67,33 +67,7 @@ make dev
 
 
 
-Environment Configuration
-⚠️ IMPORTANT: Never commit real credentials!
-
-Copy config/.env.example to config/.env.dev
-
-Update the following placeholders:
-
-DB_PASSWORD - Your local PostgreSQL password
-
-REDIS_PASSWORD - Your Redis password (if any)
-
-JWT_ACCESS_SECRET - A secure random string for JWT signing
-
-ENCRYPTION_KEY - A 32-character encryption key
-
-Available Services
-Service	Port	Description
-API Gateway	3000	Main entry point
-Auth Service	3001	Authentication & authorization
-Payment Service	3002	Payment processing
-Commerce Service	3003	Marketplace backend
-Delivery Service	3004	Delivery orchestration
-Notification Platform	3005	Multi-channel notifications
-USSD Gateway	3006	USSD service
-Corporate FX	3007	FX trading platform
-AI Service	5000	AI/ML service (Python)
-📁 Project Structure
+ Project Structure
 text
 siamsiam-ecosystem/
 ├── packages/              # Shared internal packages
@@ -114,7 +88,7 @@ siamsiam-ecosystem/
 ├── mobile/                # Mobile apps
 ├── infrastructure/        # DevOps & infrastructure
 └── docs/                  # Documentation
-🔧 Technology Stack
+ Technology Stack
 Backend
 Runtime: Node.js 18+
 
@@ -153,7 +127,7 @@ Monitoring: Prometheus + Grafana
 
 Logging: ELK Stack (Elasticsearch, Logstash, Kibana)
 
-📚 Documentation
+Documentation
 Architecture Overview
 
 API Documentation
@@ -164,7 +138,7 @@ Deployment Guide
 
 Security Guidelines
 
-🔒 Security
+ Security
 PCI-DSS compliant payment processing
 
 AES-256 encryption for data at rest
@@ -177,17 +151,11 @@ Rate limiting and DDoS protection
 
 Regular security audits
 
-🤝 Contributing
+ Contributing
 Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.
 
-📄 License
+ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-📧 Contact
-Engineering Team: engineering@siamsiam.com
-
-API Support: api-support@siamsiam.com
-
-Security: security@siamsiam.com
-
-<div align="center"> <sub>Built with ❤️ by the SiamSiam Engineering Team</sub> </div> ```
+ Contact
+zimscexammate@gmail.com
